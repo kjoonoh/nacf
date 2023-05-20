@@ -7,6 +7,7 @@ import { useNavigation, useRoute } from '@react-navigation/native';
 
 const MovieScreen = () => {
     const [nowPlayings, setNowPlayings] = useState([])
+    const route = useRoute()
     const navigation = useNavigation()
     const getAddress = (category) => {
         return `https://api.themoviedb.org/3/movie/${category}?language=en-US&page=1`

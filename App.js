@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 import MovieScreen from './pages/MovieScreen';
 import TvScreen from './pages/TvScreen';
+import TvStack from './stacks/TvStack';
 
 const Tab = createBottomTabNavigator()
 
@@ -15,7 +16,8 @@ const App = () => {
       <Tab.Navigator>
         <Tab.Screen 
           name="Movie"
-          component={MovieScreen}
+          // component={MovieScreen}
+          component={TvStack}
         />
         <Tab.Screen 
           name="Tv"
